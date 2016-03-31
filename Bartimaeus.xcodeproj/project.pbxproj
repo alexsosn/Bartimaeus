@@ -14,6 +14,12 @@
 		CE735AD41CABC83C00571088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE735AD21CABC83C00571088 /* LaunchScreen.storyboard */; };
 		CE735ADF1CABC83D00571088 /* BartimaeusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE735ADE1CABC83D00571088 /* BartimaeusTests.swift */; };
 		CE735AEA1CABC83D00571088 /* BartimaeusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE735AE91CABC83D00571088 /* BartimaeusUITests.swift */; };
+		CE735AF81CABD9A000571088 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE735AF71CABD9A000571088 /* Services.swift */; };
+		CE735AFA1CABE74500571088 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE735AF91CABE74500571088 /* Accelerate.framework */; };
+		CE735AFC1CABE75C00571088 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE735AFB1CABE75C00571088 /* libc++.tbd */; };
+		CE735AFE1CABE76500571088 /* DeepBelief.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE735AFD1CABE76500571088 /* DeepBelief.framework */; };
+		CE735B041CABE79F00571088 /* DeepNeuralNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = CE735B031CABE79F00571088 /* DeepNeuralNetwork.m */; };
+		CE735B071CABEC7300571088 /* ccv2012.ntwk in Resources */ = {isa = PBXBuildFile; fileRef = CE735B061CABEC7300571088 /* ccv2012.ntwk */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,14 @@
 		CE735AE51CABC83D00571088 /* BartimaeusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BartimaeusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE735AE91CABC83D00571088 /* BartimaeusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BartimaeusUITests.swift; sourceTree = "<group>"; };
 		CE735AEB1CABC83D00571088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE735AF71CABD9A000571088 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		CE735AF91CABE74500571088 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		CE735AFB1CABE75C00571088 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		CE735AFD1CABE76500571088 /* DeepBelief.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepBelief.framework; path = Frameworks/DeepBelief.framework; sourceTree = "<group>"; };
+		CE735B011CABE79E00571088 /* Bartimaeus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bartimaeus-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE735B021CABE79F00571088 /* DeepNeuralNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepNeuralNetwork.h; sourceTree = "<group>"; };
+		CE735B031CABE79F00571088 /* DeepNeuralNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeepNeuralNetwork.m; sourceTree = "<group>"; };
+		CE735B061CABEC7300571088 /* ccv2012.ntwk */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccv2012.ntwk; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE735AFE1CABE76500571088 /* DeepBelief.framework in Frameworks */,
+				CE735AFC1CABE75C00571088 /* libc++.tbd in Frameworks */,
+				CE735AFA1CABE74500571088 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +94,10 @@
 		CE735ABD1CABC83C00571088 = {
 			isa = PBXGroup;
 			children = (
+				CE735B051CABEC7300571088 /* Nets */,
+				CE735AFD1CABE76500571088 /* DeepBelief.framework */,
+				CE735AFB1CABE75C00571088 /* libc++.tbd */,
+				CE735AF91CABE74500571088 /* Accelerate.framework */,
 				CE735AC81CABC83C00571088 /* Bartimaeus */,
 				CE735ADD1CABC83D00571088 /* BartimaeusTests */,
 				CE735AE81CABC83D00571088 /* BartimaeusUITests */,
@@ -99,10 +120,14 @@
 			children = (
 				CE735AC91CABC83C00571088 /* AppDelegate.swift */,
 				CE735ACB1CABC83C00571088 /* ViewController.swift */,
+				CE735B021CABE79F00571088 /* DeepNeuralNetwork.h */,
+				CE735B031CABE79F00571088 /* DeepNeuralNetwork.m */,
+				CE735AF71CABD9A000571088 /* Services.swift */,
 				CE735ACD1CABC83C00571088 /* Main.storyboard */,
 				CE735AD01CABC83C00571088 /* Assets.xcassets */,
 				CE735AD21CABC83C00571088 /* LaunchScreen.storyboard */,
 				CE735AD51CABC83C00571088 /* Info.plist */,
+				CE735B011CABE79E00571088 /* Bartimaeus-Bridging-Header.h */,
 			);
 			path = Bartimaeus;
 			sourceTree = "<group>";
@@ -123,6 +148,14 @@
 				CE735AEB1CABC83D00571088 /* Info.plist */,
 			);
 			path = BartimaeusUITests;
+			sourceTree = "<group>";
+		};
+		CE735B051CABEC7300571088 /* Nets */ = {
+			isa = PBXGroup;
+			children = (
+				CE735B061CABEC7300571088 /* ccv2012.ntwk */,
+			);
+			path = Nets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +226,7 @@
 				TargetAttributes = {
 					CE735AC51CABC83C00571088 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = AUMEW37ZKN;
 					};
 					CE735AD91CABC83D00571088 = {
 						CreatedOnToolsVersion = 7.3;
@@ -232,6 +266,7 @@
 				CE735AD41CABC83C00571088 /* LaunchScreen.storyboard in Resources */,
 				CE735AD11CABC83C00571088 /* Assets.xcassets in Resources */,
 				CE735ACF1CABC83C00571088 /* Main.storyboard in Resources */,
+				CE735B071CABEC7300571088 /* ccv2012.ntwk in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE735B041CABE79F00571088 /* DeepNeuralNetwork.m in Sources */,
 				CE735ACC1CABC83C00571088 /* ViewController.swift in Sources */,
+				CE735AF81CABD9A000571088 /* Services.swift in Sources */,
 				CE735ACA1CABC83C00571088 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +370,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -379,6 +417,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -401,10 +440,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Bartimaeus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.owl.Bartimaeus.Bartimaeus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bartimaeus/Bartimaeus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -412,10 +461,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Bartimaeus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.owl.Bartimaeus.Bartimaeus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bartimaeus/Bartimaeus-Bridging-Header.h";
 			};
 			name = Release;
 		};

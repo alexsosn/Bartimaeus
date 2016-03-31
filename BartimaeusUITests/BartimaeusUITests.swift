@@ -2,8 +2,8 @@
 //  BartimaeusUITests.swift
 //  BartimaeusUITests
 //
-//  Created by user on 3/30/16.
-//  Copyright © 2016 user. All rights reserved.
+//  Created by Alex on 3/30/16.
+//  Copyright © 2016 Alex. All rights reserved.
 //
 
 import XCTest
